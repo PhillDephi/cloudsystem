@@ -1,0 +1,12 @@
+{
+  "name": "shopify-scale-with-glory",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Production build of shopifyscalewithglory.com",
+  "scripts": {
+    "build": "node -e \"require('fs').accessSync('dist/index.html'); console.log('Using prebuilt dist/')\"",
+    "dev": "npx --yes serve dist -s -l 5173",
+    "start": "npx --yes serve dist -s -l 5173",
+    "preview": "npx --yes serve dist -s -l 5173"
+  }
+}
