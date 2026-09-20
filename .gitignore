@@ -1,8 +1,9 @@
 node_modules/
+dist/
 .vercel/
 .DS_Store
 Thumbs.db
 *.log
 .env
 .env.*
-public/
+_media_backup/

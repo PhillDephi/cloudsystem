@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --color-ink: #0b0d0c;
+  --color-ink-soft: #5c6560;
+  --color-mute: #8a918c;
+  --color-paper: #f7f7f5;
+  --color-paper-2: #efefec;
+  --color-surface: #ffffff;
+  --color-line: #e2e2de;
+  --color-line-strong: #c8c8c2;
+  --color-accent: #0f6b45;
+  --color-accent-deep: #0a4d31;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--color-ink);
+    background: var(--color-paper);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(15, 107, 69, 0.14);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .section-pad {
+    padding-block: clamp(5.5rem, 9vw, 7.5rem);
+  }
+
+  .container-site {
+    width: min(1120px, calc(100% - 3rem));
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+  }
+
+  .display {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+  }
+
+  .body-lg {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--color-ink-soft);
+  }
+
+  .hairline {
+    border-color: var(--color-line);
+  }
+}
