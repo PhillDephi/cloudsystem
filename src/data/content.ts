@@ -1,46 +1,48 @@
 export const agency = {
   name: 'Scale With Glory',
-  tagline: 'Shopify growth agency',
+  tagline: 'Shopify Growth Agency',
   whatsapp: '+1 (740) 372-9885',
   whatsappLink: 'https://wa.me/17403729885',
   email: 'team.office.us@gmail.com',
   emailLink: 'mailto:team.office.us@gmail.com',
   partnersLogo: '/assets/shopify-partners-logo-D1PL0FJ0.png',
   badge: '/assets/shopify-certified-badge-BRUsArHb.png',
-  photo: '/assets/profile-photo-BKAbESE8.jpg',
+  photo: '/assets/founder-photo.jpg?v=2',
   founder: 'Glory Olatunji',
   founderTitle: 'Founder',
+  logo: '/logo.svg',
+  favicon: '/favicon.svg',
 }
 
 export const navLinks = [
-  { id: 'work', label: 'Work' },
-  { id: 'services', label: 'Services' },
-  { id: 'method', label: 'Method' },
-  { id: 'clients', label: 'Clients' },
-  { id: 'about', label: 'About' },
-  { id: 'contact', label: 'Contact' },
+  { to: '/work', label: 'Work' },
+  { to: '/services', label: 'Services' },
+  { to: '/method', label: 'Method' },
+  { to: '/clients', label: 'Clients' },
+  { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
 ] as const
 
 export const topMetrics = [
-  { value: '376+', label: 'Clients' },
-  { value: '894', label: 'Five-star reviews' },
-  { value: '$8.5M+', label: 'Client revenue' },
-  { value: '98%', label: 'Success rate' },
+  { value: '376+', label: 'Clients', unit: 'count', period: 'Lifetime' },
+  { value: '894', label: 'Five-star reviews', unit: 'count', period: 'Lifetime' },
+  { value: '$8.5M+', label: 'Client revenue', unit: 'USD', period: 'Lifetime' },
+  { value: '98%', label: 'Success rate', unit: 'rate', period: 'Lifetime' },
 ] as const
 
 export const aboutCopy = {
   intro:
     'Scale With Glory helps Shopify stores sell more from the traffic they already pay for. We fix conversion problems, build store systems, and set up email, SEO, and ads that produce measurable sales.',
-  body: 'We have completed 1,500+ projects in 40+ countries, helped generate over $8.5M in client revenue, and managed more than $500K in ad spend at an average 4.5x return. Email systems we build typically drive 25–35% of store revenue. SEO work averages +280% organic traffic. Conversion work averages a 2.8x improvement.',
+  body: 'We have completed 1,500+ projects in 40+ countries, helped generate over $8.5M in client revenue, and managed more than $500K in ad spend at an average 4.5x return. Email systems we build typically drive 25 to 35% of store revenue. SEO work averages +280% organic traffic. Conversion work averages a 2.8x improvement.',
   close:
     'We work best with stores that already have products and traffic. If orders are weak, carts are abandoned, or ads are not paying back, that is the work we do.',
 }
 
 export const aboutStats = [
-  { value: '1,500+', label: 'Projects' },
-  { value: '7+', label: 'Years' },
-  { value: '40+', label: 'Countries' },
-  { value: '98%', label: 'Success rate' },
+  { value: '1,500+', label: 'Projects', unit: 'count' },
+  { value: '7+', label: 'Years', unit: 'years' },
+  { value: '40+', label: 'Countries', unit: 'count' },
+  { value: '98%', label: 'Success rate', unit: 'rate' },
 ] as const
 
 export const trustBadges = [
@@ -72,18 +74,18 @@ export const testimonials = [
 ]
 
 export const niches = [
-  { title: 'Fashion & apparel', copy: 'Built and improved stores for 200+ apparel brands.' },
-  { title: 'Beauty & skincare', copy: 'Subscriptions, product pages, and email that increase repeat orders.' },
+  { title: 'Fashion and apparel', copy: 'Built and improved stores for 200+ apparel brands.' },
+  { title: 'Beauty and skincare', copy: 'Subscriptions, product pages, and email that increase repeat orders.' },
   { title: 'Dropshipping', copy: 'Product research, supplier setup, and stores built to sell quickly.' },
   { title: 'Higher-priced products', copy: 'Trust, clarity, and checkout paths for jewelry, electronics, and home goods.' },
-  { title: 'Courses & digital offers', copy: 'Landing pages and funnels that turn traffic into paying customers.' },
+  { title: 'Courses and digital offers', copy: 'Landing pages and funnels that turn traffic into paying customers.' },
   { title: 'Retail going online', copy: 'First online stores for brands selling beyond their physical location.' },
 ]
 
 export const successStories = [
   {
     name: 'Marcus Chen',
-    role: 'Founder & CEO',
+    role: 'Founder and CEO',
     company: 'TechVault Solutions',
     stack: 'Shopify Plus',
     quote:
@@ -125,8 +127,8 @@ export const successStories = [
   },
 ]
 
+/** First video moved to end per request */
 export const salesVideos = [
-  { title: 'Product launch ad', src: '/assets/sales-video-1-BrqC_LeH.mp4' },
   { title: 'Campaign video 2', src: '/assets/sales-video-2-CHsauqSr.mp4' },
   { title: 'Campaign video 3', src: '/assets/sales-video-3-CcmEZ9tx.mp4' },
   { title: 'Campaign video 4', src: '/assets/sales-video-4-CbbA5Low.mp4' },
@@ -134,6 +136,7 @@ export const salesVideos = [
   { title: 'Campaign video 6', src: '/assets/sales-video-6-BOrLhcfJ.mp4' },
   { title: 'Campaign video 7', src: '/assets/sales-video-7-OInPzhRB.mp4' },
   { title: 'Campaign video 8', src: '/assets/sales-video-8-BT0rvaje.mp4' },
+  { title: 'Product launch ad', src: '/assets/sales-video-1-BrqC_LeH.mp4' },
 ]
 
 export const caseStudies = [
@@ -143,8 +146,8 @@ export const caseStudies = [
     client: 'LuxeThreads Co.',
     image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop',
     metrics: [
-      { label: 'Monthly revenue', value: '$2K → $45K' },
-      { label: 'Conversion rate', value: '0.8% → 4.2%' },
+      { label: 'Monthly revenue', value: '$2K to $45K' },
+      { label: 'Conversion rate', value: '0.8% to 4.2%' },
       { label: 'Email share', value: '32% of sales' },
       { label: 'Ad return', value: '5.8x' },
     ],
@@ -180,7 +183,7 @@ export const caseStudies = [
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=500&fit=crop',
     metrics: [
       { label: 'Email revenue', value: '$120K' },
-      { label: 'Open rate', value: '12% → 38%' },
+      { label: 'Open rate', value: '12% to 38%' },
       { label: 'Cart recovery', value: '18%' },
       { label: 'List growth', value: '+8,500' },
     ],
@@ -191,8 +194,8 @@ export const caseStudies = [
     client: 'FitFuel Supplements',
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=500&fit=crop',
     metrics: [
-      { label: 'Revenue', value: '$12K → $52K / mo' },
-      { label: 'Page load', value: '8.2s → 1.8s' },
+      { label: 'Revenue', value: '$12K to $52K / mo' },
+      { label: 'Page load', value: '8.2s to 1.8s' },
       { label: 'Mobile conversion', value: '+340%' },
       { label: 'Subscriptions', value: '$8K / month' },
     ],
@@ -204,7 +207,7 @@ export const caseStudies = [
     image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=500&fit=crop',
     metrics: [
       { label: 'First-month revenue', value: '$28,000' },
-      { label: 'Followers', value: '0 → 45K' },
+      { label: 'Followers', value: '0 to 45K' },
       { label: 'Videos over 1M views', value: '3' },
       { label: 'Cost per customer', value: '$4.20' },
     ],
@@ -255,7 +258,7 @@ export const services = [
     price: 'From $500',
   },
   {
-    title: 'Email & ads',
+    title: 'Email and ads',
     description: 'Email flows, campaigns, and ad creatives that recover and grow sales.',
     rating: '5',
     reviews: '143',
@@ -281,18 +284,18 @@ export const skillGroups = [
   {
     category: 'What we do well',
     items: [
-      { name: 'Shopify store design & setup', level: 98, note: '500+ stores built, including LuxeThreads ($45K/mo) and FitFuel ($52K/mo).' },
+      { name: 'Shopify store design and setup', level: 98, note: '500+ stores built, including LuxeThreads ($45K/mo) and FitFuel ($52K/mo).' },
       { name: 'Shopify Liquid edits', level: 95, note: 'Custom theme work for 200+ stores.' },
       { name: 'Custom Shopify sections', level: 93, note: 'Shopify 2.0 sections with about 40% faster load times on average.' },
       { name: 'Web development', level: 88, note: 'React and TypeScript for client sites and internal tools.' },
-      { name: 'Payments & APIs', level: 92, note: 'Stripe, PayPal, Razorpay, and custom integrations for 100+ stores.' },
+      { name: 'Payments and APIs', level: 92, note: 'Stripe, PayPal, Razorpay, and custom integrations for 100+ stores.' },
       { name: 'Bug fixing', level: 97, note: '800+ Shopify issues resolved, including checkout and theme conflicts.' },
     ],
   },
 ]
 
 export const processSteps = [
-  { step: '01', title: 'Review', copy: 'Find where buyers drop off and which leaks cost the most sales.' },
+  { step: '01', title: 'Review', copy: 'Find where buyers drop off and which losses cost the most sales.' },
   { step: '02', title: 'Fix', copy: 'Improve product pages, offers, and checkout so more visitors buy.' },
   { step: '03', title: 'Automate', copy: 'Add email, SEO, and ads that keep working after launch.' },
   { step: '04', title: 'Grow', copy: 'Track results and expand what is already producing sales.' },
@@ -302,17 +305,17 @@ export const revenueLeaks = [
   {
     problem: 'Visitors arrive. Few buy.',
     fix: 'We improve product pages, offers, and checkout so more of the same traffic converts.',
-    result: 'Typical conversion: 1.1% → 3.4%',
+    result: 'Typical conversion: 1.1% to 3.4%',
   },
   {
     problem: 'Carts are left unpaid.',
     fix: 'We set up email flows that recover abandoned carts and bring buyers back.',
-    result: 'Typical recovery: 18–22% of lost carts',
+    result: 'Typical recovery: 18 to 22% of lost carts',
   },
   {
     problem: 'Ads spend money without return.',
     fix: 'We fix the store path first, then rebuild ads around products that already sell.',
-    result: 'Typical ad return: 1.4x → 5.2x',
+    result: 'Typical ad return: 1.4x to 5.2x',
   },
   {
     problem: 'Mobile visitors leave fast.',
@@ -322,7 +325,7 @@ export const revenueLeaks = [
   {
     problem: 'Email list is large but quiet.',
     fix: 'We segment the list and write offers that produce monthly sales from email.',
-    result: 'Typical email share: 28–35% of revenue',
+    result: 'Typical email share: 28 to 35% of revenue',
   },
   {
     problem: 'Buyers do not trust the store.',
@@ -389,9 +392,15 @@ export const liveProjects = [
 ]
 
 export const portfolioStats = [
-  { value: '217+', label: 'Projects shown' },
-  { value: '376+', label: 'Clients' },
-  { value: '$8.5M+', label: 'Client revenue' },
-  { value: '5.0', label: 'Average rating' },
-  { value: '98%', label: 'Success rate' },
+  { value: '217+', label: 'Projects shown', unit: 'count' },
+  { value: '376+', label: 'Clients', unit: 'count' },
+  { value: '$8.5M+', label: 'Client revenue', unit: 'USD' },
+  { value: '5.0', label: 'Average rating', unit: 'score' },
+  { value: '98%', label: 'Success rate', unit: 'rate' },
+] as const
+
+export const heroKpis = [
+  { metric: 'Sales recovered', value: '60 to 80%', window: '60 days' },
+  { metric: 'First sales lift', value: '14 days', window: 'Typical' },
+  { metric: 'Stores improved', value: '1,500+', window: '40+ countries' },
 ] as const
